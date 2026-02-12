@@ -1,0 +1,88 @@
+.info-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+    padding: 40px 0 80px 0;
+  width: 75vw;
+    max-width: 1200px;
+  margin: 00 auto;
+}
+
+.left-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 27px;
+  max-width: 30%;
+}
+
+.mid-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  max-width: 30%;
+}
+
+.cta-btn {
+  background: #D3E373;
+  color: #38400D;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.25s ease;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+
+
+
+/* 🌟 Tablet (≤ 900px) */
+@media (max-width: 900px) {
+  .info-strip {
+    width: 90%;
+    gap: 20px;
+  }
+
+  .left-text,
+  .mid-text {
+    max-width: 32%;
+    font-size: 16px;
+  }
+
+  .cta-btn {
+    font-size: 18px;
+    padding: 14px 32px;
+  }
+}
+
+/* 🌟 Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .info-strip {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    gap: 16px;
+    padding: 20px 0 60px 0;
+  }
+
+  .left-text,
+  .mid-text {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    font-size: 18px;
+    padding: 14px 0;
+  }
+}

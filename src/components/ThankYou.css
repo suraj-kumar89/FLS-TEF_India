@@ -1,0 +1,25 @@
+.thankyou-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.thankyou-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #6346FA;   /* theme color */
+  margin-bottom: 20px;
+}
+
+.thankyou-text {
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+  max-width: 600px;
+}

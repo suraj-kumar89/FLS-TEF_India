@@ -1,0 +1,271 @@
+.hero-top-sect{
+  width: 75vw;
+  margin: 0 auto;
+      max-width: 1200px;
+}
+
+/* ------------------------ */
+/* HERO TEXT SECTION */
+/* ------------------------ */
+
+
+
+.hero-top-head {
+  color: #242325;
+  text-align: center;
+  font-family: "Raveo";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.block {
+  display: inline-block;
+}
+
+.block-hro-lvl-blk {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.hero-top-txt {
+  color: #47464A;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* ------------------------ */
+/* WEBINAR SECTION */
+/* ------------------------ */
+
+.webinar-section-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  gap: 2.5rem;
+}
+
+.info-box {
+  background: #EDF3C6;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 450px;
+  height: 95px;
+
+  /* 🔥 Perfect bottom curved purple shadow */
+    box-shadow: inset 0 -4px 0 #38400d;
+}
+
+
+.info-box p {
+  color: #38400D;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0;
+      padding: 00 40px;
+}
+
+/* RIGHT CONTENT */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.features {
+  display: flex;
+  gap: 40px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.feature-item h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #1e1e1e;
+}
+
+.feature-item span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #5a5a5a;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* CTA */
+.cta-btn {
+  background: #D3E373;
+  color: white;
+  padding: 18px 40px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.2s ease;
+}
+
+.cta-btn .strike {
+  text-decoration: line-through;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+.cta-btn:hover {
+  background: #5440e6;
+}
+
+/* ------------------------ */
+/* RESPONSIVE DESIGN */
+/* ------------------------ */
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+  .hero-top-head {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .hero-top-txt {
+    width: 90%;
+    font-size: 17px;
+  }
+
+  .features {
+    gap: 20px;
+  }
+}
+
+/* Mobile - 768px */
+@media (max-width: 768px) {
+  .webinar-section-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .right-content {
+    width: 100%;
+  }
+
+  .hero-top-head {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .hero-top-txt {
+    width: 95%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .cta-btn {
+    font-size: 18px;
+    padding: 16px 32px;
+  }
+}
+
+/* Small Mobile - 480px */
+@media (max-width: 480px) {
+  .hero-top-head {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .info-box {
+    height: auto;        /* ✅ FIX */
+    min-height: 120px;   /* optional but recommended */
+  }
+
+  .block-hro-lvl-blk {
+    margin: 0 5px;
+  }
+
+
+
+  .hero-top-txt {
+    font-size: 15px;
+    width: 100%;
+        margin: 10px auto;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature-item h4 {
+    font-size: 14px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+
+  .webinar-section-top{
+    padding:10px;
+        gap: 1.5rem;
+  }
+
+  .info-box p{
+    padding: 0;
+  }
+
+  .info-box{
+    padding: 16px 24px;
+    text-align: center;
+  }
+
+  .hero-top-sect{
+    width: 372px;
+  }
+
+
+ .hro-mobile-advanced-line {
+  display: inline-flex;
+  white-space: nowrap;
+  font-size: 26px;
+  line-height: 36px;
+  margin-top: 6px;   /* ✅ THIS is the correct property */
+}
+
+
+/* Levels text stays black */
+.hro-mobile-advanced-line .lvl-text {
+  color: #242325;
+}
+
+}
+
+
+@media (min-width: 1440px) {
+  .webinar-section-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  width: 85%;
+  margin: auto;
+}
+}

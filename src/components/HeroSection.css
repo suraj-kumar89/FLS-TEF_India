@@ -1,0 +1,259 @@
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 75vw;           /* TOTAL width = 70% of viewport */
+  margin: 0 auto;        /* CENTER horizontally */
+
+  padding: 60px 0;       /* Remove sideways padding so 70vw is accurate */
+  gap: 40px;
+      max-width: 1200px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  color: #555;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.hero-lists {
+  display: flex;
+  gap: 40px;
+}
+
+.hero-lists ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hero-lists li {
+  font-size: 16px;
+  margin-bottom: 14px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.hero-lists li::before {
+  content: "•";
+  color: #998F43;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+
+/* IMAGE SECTION */
+.hero-image-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.floating-box {
+  position: absolute;
+  bottom: 20px;
+  left: -50px;
+  background: #EDF3C6;
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 800px;
+  color: #38400D;
+  font-weight: 600;
+  z-index: 5;
+    box-shadow: inset 0 -4px 0 #38400d;
+  overflow: visible;
+  width: 50%;
+
+  border-radius: 16px;
+
+
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-wrapper {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-lists {
+    flex-direction: column;
+  }
+}
+
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 32px;   /* space for icon */
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f4055;
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+
+/* Single bullet icon */
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+    background: #998f43;   /* outer circle */
+
+  /* inner dot using inset box-shadow */
+    box-shadow: inset 0 0 0 6px #c6c7a6;
+}
+
+
+
+
+/* 🌟 Tablet (≤ 900px) */
+@media (max-width: 900px) {
+
+  .hero-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* Lists become vertical */
+  .hero-lists {
+    flex-direction: column;
+    gap: 24px;
+
+  }
+
+  .hero-lists li {
+    font-size: 15px;
+  }
+
+  /* Floating box moves with image */
+  .floating-box {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    font-size: 18px;
+  }
+}
+
+
+/* 🌟 Mobile (≤ 600px) */
+@media (max-width: 600px) {
+
+
+
+
+  .hero-wrapper {
+    padding: 30px 16px;
+    gap: 24px;
+    text-align: left;
+    align-items: flex-start;
+        width: 90vw;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  /* Lists spacing */
+  .hero-lists {
+    gap: 20px;
+  }
+
+  .hero-lists li {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  /* Image full width */
+  .hero-image-wrapper {
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* FLOATING BOX — mobile optimized */
+  .floating-box {
+bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 12px 16px;
+  }
+
+  .floating-box::after {
+    height: 8px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-wrapper{
+    gap: 4rem;
+  }
+}

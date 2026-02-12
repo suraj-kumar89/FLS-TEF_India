@@ -1,0 +1,271 @@
+.bottomstrip-wrapper {
+
+  padding: 22px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* GLASS BACKGROUND */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+background: rgba(237, 243, 198, 0.65);
+
+  position: fixed;
+  bottom: 0px; /* ALWAYS FIXED */
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  z-index: 10;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.bottomstrip-wrapper.active {
+  opacity: 1; /* ONLY opacity changes */
+}
+
+
+/* PRICE LAYOUT */
+.bs-price-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.bs-price-big {
+  font-size: 70px;
+  font-weight: 800;
+  color: #664016;
+  line-height: 1;
+}
+
+.bs-price-right {
+  margin-top: 8px;
+}
+
+.bs-old-price {
+  font-size: 28px;
+  color: #64748B;
+  text-decoration: line-through;
+}
+
+.bs-discount {
+  font-size: 28px;
+  color: #3D4F63;
+  margin-top: -6px;
+}
+
+/* FEATURES */
+.bs-features {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.bs-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bs-icon {
+  width: 34px;
+}
+
+/* CTA BUTTON */
+.bs-cta {
+  position: relative;
+}
+
+.bs-btn {
+  background: #D3E373;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 50px;
+  color: #38400D;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+}
+
+.bs-badge {
+  position: absolute;
+  top: -12px;
+  right: 18px;
+  background: white;
+  color: #38400D;
+  padding: 4px 12px;
+  font-size: 13px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+
+
+
+
+/* 🌟 Tablet (≤ 900px) */
+@media (max-width: 900px) {
+  .bottomstrip-wrapper {
+    padding: 20px 24px;
+  }
+
+  .bs-price-big {
+    font-size: 55px;
+  }
+
+  .bs-old-price,
+  .bs-discount {
+    font-size: 22px;
+  }
+
+  .bs-features {
+    gap: 20px;
+  }
+
+  .bs-btn {
+    font-size: 18px;
+    padding: 16px 30px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+
+  /* Hide features */
+  .bs-features {
+    display: none;
+  }
+
+  /* Wrapper layout: horizontal like screenshot */
+  .bottomstrip-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px;
+    /* Smaller height */
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  /* Price section mobile look */
+  .bs-price-section {
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .bs-price-big {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .bs-old-price {
+    font-size: 16px;
+    padding-bottom: .25rem
+  }
+
+  .bs-discount {
+    font-size: 16px;
+  }
+
+  /* Right side CTA layout */
+  .bs-cta {
+    position: relative;
+  }
+
+  .bs-btn {
+    padding: 14px 26px;
+    font-size: 16px;
+    border-radius: 40px;
+    white-space: nowrap;
+  }
+
+  /* seats left bubble */
+  .bs-badge {
+    top: -14px;
+    right: 20px;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+  }
+}
+
+
+
+
+/* MODAL BACKDROP */
+.rzp-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+/* MODAL BOX */
+.rzp-modal {
+  width: 90%;
+  max-width: 500px;
+  height: 80vh;
+  background: #fff;
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  animation: fadeIn 0.3s ease;
+}
+
+/* CLOSE BUTTON */
+.rzp-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* PAYMENT FRAME */
+.rzp-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+@media (min-width: 1440px) {
+  .bottomstrip-wrapper {
+    padding: 24px 144px;
+  }
+
+  .bs-price-section{
+    align-items: center;
+  }
+
+  .bs-price-big{
+    font-size: 48px;
+  }
+
+  .bs-old-price, .bs-discount{
+    font-size: 18px;
+  }
+
+
+}

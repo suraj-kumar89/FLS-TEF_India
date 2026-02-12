@@ -1,0 +1,99 @@
+.webinar-section {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #FBFCF2 0%, #FBFCF2 50%, #ffffff 100%);
+  text-align: center;
+}
+
+.content-wrapper {
+  width: 75vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.webinar-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.webinar-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* ← FIXED 4 columns */
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.grid-card {
+  background: #fff;
+  padding: 28px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+  text-align: left;
+  /* ← center-align everything inside */
+}
+
+.grid-card img {
+  display: block;
+  /* ← remove inline gap */
+  margin: 00;
+  /* ← centers the icon horizontally */
+
+  height: auto;
+}
+
+
+.grid-card:hover {
+  transform: translateY(-3px);
+}
+
+.card-icon {
+  color: #7c4dff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.grid-card p {
+    color: #333;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 500;
+}
+
+/* Responsive (optional) – on mobile make 2 columns */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+
+
+/* Small Mobile - 480px */
+@media (max-width: 480px) {
+
+  .webinar-title {
+    font-size: 28px;
+    line-height: 36px;
+
+  }
+
+
+  .content-wrapper {
+  width: 90vw;
+  margin: 0 auto;
+}
+  
+}

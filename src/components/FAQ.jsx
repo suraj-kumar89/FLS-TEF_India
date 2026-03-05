@@ -30,7 +30,7 @@ export default function FAQ() {
     },
     {
       q: "Is ₹99 refundable?",
-      a: "The ₹99 trial fee is non-refundable. However, if you decide to enroll in the full TEF course, the ₹299 is adjusted in your final course fee."
+      a: "The ₹99 trial fee is non-refundable. However, if you decide to enroll in the full TEF course, the ₹99 is adjusted in your final course fee."
     },
    
   ];

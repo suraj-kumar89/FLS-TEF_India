@@ -17,14 +17,14 @@ export default function CTA() {
         </p>
 
         <div className="cta-highlight-box">
-          This is the smartest ₹299 you will spend before starting your French journey.
+          This is the smartest ₹99 you will spend before starting your French journey.
 
         </div>
 
 
 
         <button className="cta-join-btn" onClick={() => window.location.href = "https://pages.razorpay.com/tef-india"}>
-          Join The ₹299 Trial Class Now
+          Join The ₹99 Trial Class Now
 
         </button>
 

@@ -25,10 +25,10 @@ export default function BottomStrip() {
       
       {/* PRICE */}
       <div className="bs-price-section">
-        <div className="bs-price-big">₹299</div>
+        <div className="bs-price-big">₹99</div>
         <div className="bs-price-right">
           <div className="bs-old-price">Rs.999</div>
-          <div className="bs-discount">70% OFF</div>
+          <div className="bs-discount">90% OFF</div>
         </div>
       </div>
 
@@ -57,7 +57,7 @@ export default function BottomStrip() {
           className="bs-btn"
           onClick={() => (window.location.href = "https://pages.razorpay.com/tef-india")}
         >
-          <span className="bs-badge">22 Seats left</span>
+          
           Book your seat now
         </button>
       </div>

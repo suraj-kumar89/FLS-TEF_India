@@ -29,8 +29,8 @@ export default function FAQ() {
       a: "Yes. A session recording is usually shared so you can revise key concepts, strategies, and the roadmap discussed during the class."
     },
     {
-      q: "Is ₹299 refundable?",
-      a: "The ₹299 trial fee is non-refundable. However, if you decide to enroll in the full TEF course, the ₹299 is adjusted in your final course fee."
+      q: "Is ₹99 refundable?",
+      a: "The ₹99 trial fee is non-refundable. However, if you decide to enroll in the full TEF course, the ₹299 is adjusted in your final course fee."
     },
    
   ];

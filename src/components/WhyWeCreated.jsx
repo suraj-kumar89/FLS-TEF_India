@@ -12,7 +12,7 @@ export default function WhyWeCreated() {
           <h2 className="why-title">Why We Created This</h2>
 
           <h3 className="why-price">
-            ₹299 <span>TEF Trial Class
+            ₹99 <span>TEF Trial Class
 </span>
           </h3>
 
@@ -20,7 +20,7 @@ export default function WhyWeCreated() {
            Most TEF aspirants start their preparation without clarity and end up wasting time, money, and multiple exam attempts. They follow generic French courses that don’t focus on TEF scoring, exam structure, or timelines
           </p>
           <p className="why-desc">
-This ₹299 TEF trial class fixes that by giving you one clear, structured plan for your entire A1 to B2+ TEF journey, with a strong focus on exam readiness and score improvement.
+This ₹99 TEF trial class fixes that by giving you one clear, structured plan for your entire A1 to B2+ TEF journey, with a strong focus on exam readiness and score improvement.
           </p>
 
           <p className="why-bold">

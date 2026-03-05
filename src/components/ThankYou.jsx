@@ -7,7 +7,7 @@ export default function ThankYou() {
     // Fire Meta Purchase Event
     if (window.fbq) {
       window.fbq("track", "Purchase", {
-        value: 299,     // Change to your price if needed
+        value: 99,     // Change to your price if needed
         currency: "INR"
       });
     }

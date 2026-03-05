@@ -45,7 +45,7 @@ export default function StarterKit() {
     <section className="starter-wrapper">
       <h2 className="starter-heading">
  A Complete TEF Preparation Starter Kit <br />
-        <span className="purple-text">Worth ₹5,500+ for Just ₹299 -</span>
+        <span className="purple-text">Worth ₹5,500+ for Just ₹99 -</span>
         <span>
           Total No Brainer
         </span>
@@ -69,7 +69,7 @@ export default function StarterKit() {
         {/* TOTAL BOX INSIDE GRID */}
         <div className="starter-total-box">
           <h3>Total Value ₹5,500+</h3>
-          <p>Your Price Today ₹299</p>
+          <p>Your Price Today ₹99</p>
         </div>
       </div>
     </section>

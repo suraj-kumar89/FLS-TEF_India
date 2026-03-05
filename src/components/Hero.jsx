@@ -35,7 +35,7 @@ export default function Hero() {
 
           <p className="hero-top-txt">
             Get clarity on where to start, how to progress from A1 to B2+, and how to prepare smartly for the TEF exam.
-All inside one powerful ₹299 live trial class.
+All inside one powerful ₹99 live trial class.
 
           </p>
 
@@ -78,7 +78,7 @@ All inside one powerful ₹299 live trial class.
                 className="cta-btn"
                 onClick={() => window.location.href = "https://pages.razorpay.com/tef-india"}
               >
-                Join the Trial Class at ₹299
+                Join the Trial Class at ₹99
                 <span className="strike">₹999</span>
               </button>
 

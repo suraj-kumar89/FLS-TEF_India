@@ -24,7 +24,7 @@ export default function HowItWorks() {
               <div className="timeline-dot active"></div>
               <div>
                 <p className="step-title active">Step one</p>
-                <p className="step-desc bold">Register and pay ₹299</p>
+                <p className="step-desc bold">Register and pay ₹99</p>
               </div>
             </div>
 

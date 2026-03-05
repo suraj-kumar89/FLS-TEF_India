@@ -17,7 +17,7 @@ export default function FeaturesGrid(){
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-8">
           <h3 className="r-h1">Everything You Need<br/>To Start Learning German The Right Way</h3>
-          <div className="r-body-strong mt-2">For ₹299, you get:</div>
+          <div className="r-body-strong mt-2">For ₹99, you get:</div>
         </div>
 
         <div className="flex flex-wrap gap-6 justify-center">

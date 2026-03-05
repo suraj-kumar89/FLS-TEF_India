@@ -17,7 +17,7 @@ export default function FeaturesSection() {
     "TEF-specific Do’s & Don’ts that save months of wasted effort",
     "A simple 90-day score-oriented study plan",
     "Free career & immigration counselling (Canada-focused)",
-    " Get 50% OFF on the full TEF course — your ₹299 will be adjusted"
+    " Get 50% OFF on the full TEF course — your ₹99 will be adjusted"
   ];
 
   return (
@@ -35,7 +35,7 @@ To Start Preparing for TEF The Right Way
 
         {/* Right Content */}
         <div className="webinar-details">
-          <h3 className="price-title">For ₹299, you get:</h3>
+          <h3 className="price-title">For ₹99, you get:</h3>
 
           <div className="features-grid">
             <ul>
